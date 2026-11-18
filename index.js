@@ -65,7 +65,9 @@ for (let i = 0; i < 25; i++) {
             }
         }
     }else {
-        new_button.textContent = "terho"
+        const img = document.createElement("img");
+        img.src = "./images/lotan_tammenterho.png";
+        new_button.appendChild(img);
     }
 
     grid.appendChild(new_button)
