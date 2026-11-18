@@ -21,12 +21,12 @@ const items = [
         img: null
     },
     {
-        text: 'yliopistotasoa',
+        text: '"yliopistotasoa"',
         tooltip: null,
         img: null
     },
     {
-        text: 'Ari on opettanut teille',
+        text: '"Ari on opettanut teille"',
         tooltip: null,
         img: null
     },
@@ -61,7 +61,7 @@ const items = [
         img: null
     },
     {
-        text: 'pelasta tämä ryhmä',
+        text: '"pelasta tämä ryhmä"',
         tooltip: null,
         img: null
     },
@@ -182,6 +182,7 @@ for (let i = 0; i < 25; i++) {
             const rand_index = randint(items.length)
             if (!taken_indexes.includes(rand_index)) {
                 new_button.textContent = items[rand_index].text
+                taken_indexes.push(rand_index)
                 break
             }
         }
